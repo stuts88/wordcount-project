@@ -1,0 +1,12 @@
+<a href="{% url 'homepage' %}">Restart</a>
+<h2>Total Words: {{ length }}</h2>
+<br />
+<br />
+<h4>Word Count</h4>
+{% for word, wcount in sortedWords %}
+{{ word }} : {{ wcount }}
+<br />
+{% endfor %}
+<br />
+<br />
+Text Entered: {{ fulltext }}
